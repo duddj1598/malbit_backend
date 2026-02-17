@@ -1,0 +1,13 @@
+package org.example.malbit_backend;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class MalbitBackendApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
