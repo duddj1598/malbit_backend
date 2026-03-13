@@ -17,13 +17,17 @@ public class User {
     private String email; // 로그인 계정
 
     @Column(nullable = false)
+    private String password; // 성함
+
+    @Column(nullable = false)
     private String name; // 성함
 
     private String disabilityType; // 장애유형
 
     private Integer cognitiveLevel; // 인지수준
 
-    private String jobType; // 직무분야
+    @Enumerated(EnumType.STRING)
+    private JobType jobType; // 직무분야
 
     private String preferredTone; // 리마스터링 말투
 
@@ -36,8 +40,10 @@ public class User {
     }
 
     @Builder
-    public User(String email, String name, String disabilityType, Integer cognitiveLevel, String jobType, String preferredTone) {
+    public User(String email, String password, String name, String disabilityType,
+                Integer cognitiveLevel, JobType jobType, String preferredTone) {
         this.email = email;
+        this.password = password;
         this.name = name;
         this.disabilityType = disabilityType;
         this.cognitiveLevel = cognitiveLevel;
