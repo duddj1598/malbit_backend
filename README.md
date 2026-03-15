@@ -14,8 +14,8 @@ A few resources to get you started if this is your first Spring Boot project:
 For help getting started with Spring Boot development, view the online documentation, which offers tutorials, samples, guidance on backend development, and a full API reference.
 
 ## Project Specification
-* **Main Language**: Java 25
-* **Framework**: Spring Boot 4.0.3
+* **Main Language**: Java 21
+* **Framework**: Spring Boot 3.2.4
 * **Database**: MySQL 8.0
 * **Build Tool**: Gradle
 * **Architecture**: RESTful API Server (Planned integration with **Python-based AI Engine**)
